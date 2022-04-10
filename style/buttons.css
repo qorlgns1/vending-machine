@@ -1,0 +1,123 @@
+@import url(../../common/css/reset.css);
+
+.btn {
+  border: 1px solid var(--border-basic-color);
+  width: 94px;
+  height: 130px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  align-content: center;
+}
+
+.item-name {
+  font-size: 10px;
+  margin-bottom: 6px;
+}
+
+.item-price {
+  font-size: 12px;
+  background-color: var(--main-color);
+  border-radius: 15px;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.mini-input {
+  box-sizing: border-box;
+  border: 0;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.mini-btn {
+  border: 2px solid var(--border-basic-color);
+  border-radius: 5px;
+  background-color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 94px;
+  height: 33px;
+}
+
+.insert-money-input {
+  background-color: white;
+  border: 1px solid var(--border-basic-color);
+}
+
+.get-btn {
+  border: 2px solid var(--border-basic-color);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 94px;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.display > button {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 170px;
+  height: 46px;
+  background-color: white;
+  border: 0;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.display > button > img {
+  display: inline-block;
+  width: 18px;
+  height: 33px;
+}
+
+.display > button > p:nth-of-type(1) {
+  font-size: 10px;
+  margin-right: 30px;
+}
+
+.item-count {
+  padding: 8px 12px;
+  border: 1px solid var(--border-basic-color);
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.my-bag > button {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 280px;
+  height: 46px;
+  background-color: white;
+  border: 0;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.my-bag > button > img {
+  display: inline-block;
+  width: 18px;
+  height: 33px;
+}
+
+.my-bag > button > p:nth-of-type(1) {
+  font-size: 10px;
+  margin-right: 135px;
+}
+
+.item-count {
+  padding: 8px 12px;
+  border: 1px solid var(--border-basic-color);
+  border-radius: 5px;
+  font-weight: 700;
+}
