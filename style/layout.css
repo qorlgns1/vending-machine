@@ -1,20 +1,5 @@
-/* setting */
-:root {
-  --main-color: #6326fd;
-  --bg-color: #eae8fe;
-  --border-basic-color: #c7c7c7;
-}
-
 body {
   background-color: var(--bg-color);
-}
-
-.header {
-  width: 386px;
-  height: 180px;
-  /* border: 1px solid black; */
-  margin: 0 auto 80px;
-  /* background-color: var(--main-color); */
 }
 
 @media (min-width: 770px) {
