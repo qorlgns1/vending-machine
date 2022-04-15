@@ -1,25 +1,44 @@
 .menu-item {
-  border: 1px solid var(--border-basic-color);
-  width: 94px;
-  height: 130px;
-  padding: 10px;
+  padding: 11px 11px 9px 13px;
+  border: 0;
   border-radius: 10px;
   background-color: white;
-  align-content: center;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+
+.menu-item:hover {
+  outline: 3px solid var(--main-color);
+}
+
+.menu-item > img:first-child {
+  margin-bottom: 2px;
+  vertical-align: bottom;
 }
 
 .item-name {
-  font-size: 10px;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
+  display: block;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
 }
 
 .item-price {
+  padding: 5px 16px 5px 15px;
+  text-align: bottom;
+  display: block;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
   font-size: 12px;
+  line-height: 100%;
   background-color: var(--main-color);
-  border-radius: 15px;
+  border-radius: 50px;
   color: white;
-  padding-top: 3px;
-  padding-bottom: 3px;
+}
+
+.item-price::after {
+  content: "원";
 }
 
 .mini-input {
