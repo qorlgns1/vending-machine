@@ -11,7 +11,7 @@ import { getMiniDisplay } from "../display/miniDisplay.js";
 
 export const insertCola = () => {
   const cola = document.querySelectorAll(
-    ".vending-machine > .items > ul > li > button"
+    ".vending-machine > .items > li > button"
   );
 
   cola.forEach((colaBtn) => {
