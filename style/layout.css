@@ -99,18 +99,12 @@ body {
   border-radius: 50px;
 }
 
-.my-stuff {
-  box-sizing: border-box;
-}
-
 .my-money-container {
   box-sizing: border-box;
   height: 50px;
   background-color: white;
   margin-bottom: 20px;
   padding: 10px 25px;
-
-  /* border: 1px solid black; */
 }
 
 .my-left-money {
