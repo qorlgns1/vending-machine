@@ -1,0 +1,20 @@
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+:root {
+  --main-color: #6326fd;
+  --bg-color: #eae8fe;
+  --border-basic-color: #c7c7c7;
+}
