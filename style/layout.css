@@ -3,13 +3,15 @@ body {
 }
 
 .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   box-sizing: border-box;
   text-align: center;
   margin: 0 0 50px 0;
 }
 
 .content > section {
-  display: inline-block;
   box-sizing: border-box;
   width: 360px;
 }
@@ -20,11 +22,13 @@ body {
   padding: 31px 27px 28px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 748px) {
+  .content {
+    display: block;
+  }
+
   .content > section {
     display: block;
-    box-sizing: border-box;
-    width: 360px;
     margin: 0 auto;
   }
 
