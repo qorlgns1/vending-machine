@@ -2,57 +2,39 @@ body {
   background-color: var(--bg-color);
 }
 
-@media (min-width: 770px) {
-  .wrapper {
-    box-sizing: border-box;
-    width: 750px;
-    /* height: 810px; */
-    /* border: 1px solid black; */
-    margin: 0 auto;
-  }
-
-  .content {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 0 50px 0;
-    border: 1px solid red; /* 레이아웃을 보기 위한 임시 border */
-  }
-
-  .content > section {
-    box-sizing: border-box;
-    width: 360px;
-  }
+.content {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 0 50px 0;
 }
 
-@media (max-width: 769px) {
-  .wrapper {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
-
-  .content {
-    box-sizing: border-box;
-    margin: 0 0 100px 0;
-  }
-
-  .content > section {
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 360px;
-    height: 545px;
-  }
-
-  .my-money-container {
-    margin-top: 20px;
-  }
+.content > section {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 360px;
 }
 
 .vending-machine {
-  margin-left: -14px;
+  margin-right: 28px;
   background-color: white;
-  padding: 30px 25px;
+  padding: 31px 27px 28px;
+}
+
+@media (max-width: 767px) {
+  .content > section {
+    display: block;
+    box-sizing: border-box;
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  .vending-machine {
+    margin-right: 0;
+  }
+
+  .my-money-container {
+    margin-bottom: 0;
+  }
 }
 
 .list-menu {
@@ -60,7 +42,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  height: 270px;
+  height: 272px;
   margin: 0 0 20px 0;
 }
 
@@ -72,15 +54,6 @@ body {
   height: 33px;
   margin-bottom: 10px;
 }
-
-/* .balance-container > form {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-  height: 33px;
-  margin-bottom: 10px;
-} */
 
 .insert-container > form {
   box-sizing: border-box;
@@ -120,10 +93,6 @@ body {
   background-color: white;
   margin-right: 10px;
   border-radius: 50px;
-}
-
-.content:last-of-type {
-  margin-right: -14px;
 }
 
 .my-stuff {
