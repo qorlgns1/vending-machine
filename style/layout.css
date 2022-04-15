@@ -156,7 +156,7 @@ body {
   overflow-y: scroll;
 }
 
-.my-bag > button > p:first-of-type {
+.my-bag > li > p:first-of-type {
   margin-right: 135px;
 }
 

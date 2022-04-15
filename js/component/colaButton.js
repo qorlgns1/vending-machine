@@ -14,8 +14,8 @@ export const copyDisplayColaBtn = (btn) => {
   return li;
 };
 
-export const bigDisplayColaBtn = (name, count) => {
-  let button = document.createElement("button");
+export const createBigDisplayCola = (name, count) => {
+  let li = document.createElement("li");
   let colaImg = document.createElement("img");
   let colaName = document.createElement("p");
   let colaCount = document.createElement("p");
@@ -28,9 +28,9 @@ export const bigDisplayColaBtn = (name, count) => {
   colaCount.innerHTML = count;
   colaCount.classList.add("item-count");
 
-  button.appendChild(colaImg);
-  button.appendChild(colaName);
-  button.appendChild(colaCount);
+  li.appendChild(colaImg);
+  li.appendChild(colaName);
+  li.appendChild(colaCount);
 
-  return button;
+  return li;
 };

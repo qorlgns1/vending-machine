@@ -1,7 +1,7 @@
 import { getMiniDisplay } from "../display/miniDisplay.js";
 import { getBigDisplay } from "../display/bigDisplay.js";
 import { getColaCount, getColaName } from "./checkCola.js";
-import { bigDisplayColaBtn } from "../component/colaButton.js";
+import { createBigDisplayCola } from "../component/colaButton.js";
 import { getLeftMoneyNode } from "../money/depositMoney.js";
 
 export const buyCola = () => {
@@ -46,7 +46,9 @@ export const buyCola = () => {
 
     // 콜라 버튼 만들기
     for (const colaName in colaData) {
-      bigDisplay.appendChild(bigDisplayColaBtn(colaName, colaData[colaName]));
+      bigDisplay.appendChild(
+        createBigDisplayCola(colaName, colaData[colaName])
+      );
     }
     // /콜라 버튼 만들기
 
