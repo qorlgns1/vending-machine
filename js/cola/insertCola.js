@@ -23,7 +23,9 @@ export const insertCola = () => {
 
         const colaName = getColaName(colaBtn);
         let flag = false;
-        Array.from(miniDisplay.children).forEach((displayBtn) => {
+        Array.from(miniDisplay.children).forEach((displayLi) => {
+          let displayBtn = displayLi.children[0];
+
           if (getColaName(displayBtn) === colaName) {
             displayBtn.children[2].innerHTML = getColaCount(displayBtn) + 1;
             flag = true;

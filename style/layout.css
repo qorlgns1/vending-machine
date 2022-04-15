@@ -78,7 +78,7 @@ body {
   /* border: 1px solid black; */
 }
 
-.display {
+.mini-display {
   box-sizing: border-box;
   padding: 10px;
   overflow-y: scroll;
@@ -88,11 +88,11 @@ body {
   background-color: var(--bg-color);
 }
 
-.display::-webkit-scrollbar {
+.mini-display::-webkit-scrollbar {
   width: 4px;
 }
 
-.display::-webkit-scrollbar-thumb {
+.mini-display::-webkit-scrollbar-thumb {
   height: 79px;
   background-color: white;
   margin-right: 10px;

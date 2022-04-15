@@ -28,7 +28,7 @@ export const rollbackCola = () => {
       // colaBtn.addEventListener("click", subtractColaCount(colaBtn));
       colaBtn.removeEventListener("click", subtractColaCount(colaBtn));
     } else {
-      miniDisplay.removeChild(colaBtn);
+      miniDisplay.removeChild(colaBtn.parentElement);
     }
   });
 };

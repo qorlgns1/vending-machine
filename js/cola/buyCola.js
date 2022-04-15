@@ -24,7 +24,9 @@ export const buyCola = () => {
       }
     });
 
-    Array.from(miniDisplay.children).forEach((colaBtn) => {
+    Array.from(miniDisplay.children).forEach((colaLi) => {
+      let colaBtn = colaLi.children[0];
+
       const colaName = getColaName(colaBtn);
       const colaCount = getColaCount(colaBtn);
 
