@@ -17,7 +17,7 @@ export const getColaCount = (btn) => {
 
 export const getColaPriceByName = (name) => {
   const colas = document.querySelectorAll(
-    ".vending-machine > .items > li > button"
+    ".vending-machine > .list-menu > li > button"
   );
 
   for (const cola of colas) {

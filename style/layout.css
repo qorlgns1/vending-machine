@@ -55,7 +55,7 @@ body {
   padding: 30px 25px;
 }
 
-.items {
+.list-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
