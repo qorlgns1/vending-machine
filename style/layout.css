@@ -59,7 +59,7 @@ body {
   margin-bottom: 10px;
 }
 
-.insert-container > form {
+.insert-container {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
