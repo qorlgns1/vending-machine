@@ -10,9 +10,7 @@ import { getMiniDisplay } from "../display/miniDisplay.js";
 // }
 
 export const insertCola = () => {
-  const cola = document.querySelectorAll(
-    ".vending-machine > .list-menu > li > button"
-  );
+  const cola = document.querySelectorAll(".list-menu .menu-item");
 
   cola.forEach((colaBtn) => {
     colaBtn.addEventListener("click", (e) => {
