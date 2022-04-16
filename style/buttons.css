@@ -1,3 +1,17 @@
+.list-menu > li > button::before {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  background-image: url(../images/cola/soldout.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
 .menu-item {
   padding: 11px 11px 9px 13px;
   border: 0;
