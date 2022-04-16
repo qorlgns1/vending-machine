@@ -56,9 +56,6 @@ export const buyCola = () => {
     while (miniDisplay.hasChildNodes()) {
       miniDisplay.removeChild(miniDisplay.firstChild);
     }
-    // miniDisplay button 삭제
-
-    const leftMoney = getLeftMoneyNode();
-    leftMoney.innerHTML = " 원";
+    // /miniDisplay button 삭제
   });
 };
