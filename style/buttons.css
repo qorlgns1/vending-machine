@@ -51,13 +51,15 @@
 }
 
 .mini-btn {
-  border: 2px solid var(--border-basic-color);
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  border: 0;
   border-radius: 5px;
   background-color: white;
-  font-size: 12px;
-  font-weight: bold;
   width: 94px;
-  height: 33px;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
 }
 
 .insert-money-input {
