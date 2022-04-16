@@ -1,4 +1,5 @@
 import { makeKoreaUnit, attachNode } from "../common/changeText.js";
+import { comma } from "../common/comma.js";
 import { getLocalStorageMoney } from "../common/localstorage.js";
 
 export const getLeftMoneyNode = () => {
@@ -12,7 +13,7 @@ export const getLeftMoney = () => {
   if (!leftMoney) {
     return 0;
   } else {
-    return Number(leftMoney);
+    return comma.remove(leftMoney);
   }
 };
 
@@ -23,12 +24,15 @@ export const getMyMoneyNode = () => {
 
 export const depositAdd = (colaPrice) => {
   const leftMoneyNode = getLeftMoneyNode();
-  leftMoneyNode.innerHTML = getLeftMoney() + Number(colaPrice) + " 원";
+  attachNode(leftMoneyNode, makeKoreaUnit(getLeftMoney(), Number(colaPrice)));
 };
 
 export const depositSubtract = (colaPrice) => {
   const leftMoneyNode = getLeftMoneyNode();
-  leftMoneyNode.innerHTML = getLeftMoney() - Number(colaPrice) + " 원";
+
+  leftMoneyNode.innerHTML = comma.change(
+    getLeftMoney() - Number(colaPrice) + " 원"
+  );
 };
 
 export const depositMoney = () => {

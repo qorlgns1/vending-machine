@@ -1,11 +1,12 @@
 import { makeKoreaUnit, attachNode } from "../common/changeText.js";
+import { comma } from "../common/comma.js";
 import { getLocalStorageMoney } from "../common/localstorage.js";
 import { getMyMoneyNode } from "./depositMoney.js";
 const insertBtn = document.querySelector(".insert-money-btn");
 
 const leftMoneyChange = (insertMoney) => {
   const leftMoneyNode = document.querySelector(".my-left-money").children[1];
-  const leftMoney = leftMoneyNode.innerHTML.split(" ")[0];
+  const leftMoney = comma.remove(leftMoneyNode.innerHTML.split(" ")[0]);
 
   attachNode(leftMoneyNode, makeKoreaUnit(leftMoney, insertMoney));
 };
@@ -26,7 +27,6 @@ export const insertMoney = () => {
       } else {
         const totalLeftMoney = myMoney - insertMoneyValue;
         localStorage.setItem("money", totalLeftMoney);
-
         const myMoneyNode = getMyMoneyNode();
         attachNode(myMoneyNode, makeKoreaUnit(totalLeftMoney));
 
