@@ -100,11 +100,12 @@ body {
 }
 
 .my-money-container {
+  margin-bottom: 20px;
+  padding: 9px 27px;
   box-sizing: border-box;
   height: 50px;
   background-color: white;
-  margin-bottom: 20px;
-  padding: 10px 25px;
+  border: 2px solid #ffffff;
 }
 
 .my-left-money {
@@ -146,7 +147,6 @@ body {
   background-color: white;
   height: 475px;
   padding: 25px 27px 26px;
-  /* border: 1px solid black; */
 }
 
 .my-bag-container > p:first-of-type {
