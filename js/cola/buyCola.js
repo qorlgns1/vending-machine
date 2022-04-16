@@ -1,8 +1,8 @@
 import { getMiniDisplay } from "../display/miniDisplay.js";
 import { getBigDisplay } from "../display/bigDisplay.js";
-import { getColaCount, getColaName } from "./checkCola.js";
+import { getColaCount, getColaName, getColaPriceByName } from "./checkCola.js";
 import { createBigDisplayCola } from "../component/colaButton.js";
-import { getLeftMoneyNode } from "../money/depositMoney.js";
+import { comma } from "../common/comma.js";
 
 export const buyCola = () => {
   const buyBtn = document.querySelector(".get-btn");
@@ -44,6 +44,8 @@ export const buyCola = () => {
     }
     // bigDisplay에 넣기
 
+    console.log(colaData);
+
     // 콜라 버튼 만들기
     for (const colaName in colaData) {
       bigDisplay.appendChild(
@@ -57,5 +59,19 @@ export const buyCola = () => {
       miniDisplay.removeChild(miniDisplay.firstChild);
     }
     // /miniDisplay button 삭제
+
+    // 잔액 변경하기
+    const totalMoneyNode = document.querySelector(
+      ".my-bag-container > p:last-of-type"
+    );
+    let totalColaPrice = 0;
+    for (const name in colaData) {
+      let price = getColaPriceByName(name);
+      totalColaPrice += price * colaData[name];
+    }
+
+    totalMoneyNode.innerHTML = `총금액 : ${comma.change(totalColaPrice)} 원`;
+
+    // /잔액 변경하기
   });
 };
