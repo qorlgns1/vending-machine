@@ -21,6 +21,11 @@ export const insertMoney = () => {
       alert("입금액을 입력해주세요.");
       return false;
     } else {
+      if (insertMoneyValue <= 0) {
+        alert("정상적인 입금액이 아닙니다. 확인해주세요.");
+        return;
+      }
+
       if (myMoney < insertMoneyValue) {
         alert("소지금이 부족합니다.");
         return false;
