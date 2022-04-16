@@ -2,6 +2,9 @@ import { getLocalStorageMoney } from "../common/localstorage.js";
 import { getMiniDisplay } from "../display/miniDisplay.js";
 import { depositAdd } from "../money/depositMoney.js";
 import { getColaCount, getColaName, getColaPriceByName } from "./checkCola.js";
+import manageCola from "./manageCola.js";
+import { pseudoClassControll } from "../common/pseudoClassControll.js";
+import { getColaIndexNode } from "../common/extract.js";
 
 export const subtractColaCount = (colaBtn) => {
   const count = getColaCount(colaBtn);
@@ -30,5 +33,16 @@ export const rollbackCola = () => {
     } else {
       miniDisplay.removeChild(colaBtn.parentElement);
     }
+
+    // 콜라 상태 관리
+    const colaName = getColaName(colaBtn);
+    manageCola.add(colaName);
+    const index = getColaIndexNode(".menu-item", colaName);
+
+    pseudoClassControll(
+      `.list-menu > li:nth-of-type(${index + 1}) > button::before`,
+      "display: none;"
+    );
+    // //콜라 상태 관리
   });
 };
