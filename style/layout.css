@@ -22,25 +22,6 @@ body {
   padding: 31px 27px 28px;
 }
 
-@media (max-width: 748px) {
-  .content {
-    display: block;
-  }
-
-  .content > section {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .vending-machine {
-    margin-right: 0;
-  }
-
-  .my-money-container {
-    margin-bottom: 0;
-  }
-}
-
 .list-menu {
   display: flex;
   flex-wrap: wrap;
@@ -191,4 +172,24 @@ body {
   background-color: white;
   margin-right: 10px;
   border-radius: 50px;
+}
+
+@media (max-width: 748px) {
+  .content {
+    display: block;
+  }
+
+  .content > .vending-machine,
+  .content > .my-stuff {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .vending-machine {
+    margin-right: 0;
+  }
+
+  .my-money-container {
+    margin-bottom: 0;
+  }
 }
