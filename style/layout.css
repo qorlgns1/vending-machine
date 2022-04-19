@@ -61,7 +61,7 @@ body {
 
 .mini-display {
   box-sizing: border-box;
-  padding: 10px;
+  padding: 12px 18px 12px 12px;
   overflow-y: scroll;
   width: 200px;
   border: 1px solid var(--border-basic-color);
@@ -94,7 +94,7 @@ body {
   background-color: var(--bg-color);
   display: inline-flex;
   justify-content: space-between;
-  padding: 6px 10px;
+  padding: 10px 10px 7px;
   border-radius: 5px;
   width: 200px;
 }
@@ -141,9 +141,10 @@ body {
 }
 
 .my-bag {
+  padding: 11px 17px 11px 11px;
   margin-bottom: 6px;
   box-sizing: border-box;
-  width: 306px;
+  /* width: 306px; */
   height: 364px;
   background-color: var(--bg-color);
   border: 1px solid #bdbdbd;
