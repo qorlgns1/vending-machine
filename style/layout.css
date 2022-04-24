@@ -11,42 +11,38 @@ body {
   margin: 0 0 50px 0;
 }
 
-.content > section {
+.vending-machine,
+.my-stuff {
   box-sizing: border-box;
   width: 360px;
 }
 
-.vending-machine {
+.content > .vending-machine {
   margin-right: 28px;
-  background-color: white;
   padding: 31px 27px 28px;
+  background-color: white;
 }
 
 .list-menu {
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
   height: 272px;
-  margin: 0 0 20px 0;
 }
 
 .balance-container {
-  box-sizing: border-box;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
-  height: 33px;
-  margin-bottom: 10px;
 }
 
 .insert-container {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
   height: 33px;
-  /* border: 1px solid black; */
   margin-bottom: 10px;
 }
 
@@ -54,9 +50,7 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
   height: 106px;
-  /* border: 1px solid black; */
 }
 
 .mini-display {
@@ -84,7 +78,6 @@ body {
   margin-bottom: 20px;
   padding: 9px 27px;
   box-sizing: border-box;
-  height: 50px;
   background-color: white;
   border: 2px solid #ffffff;
 }
@@ -113,7 +106,6 @@ body {
   background-color: var(--bg-color);
   display: flex;
   width: 306px;
-  height: 32px;
   justify-content: space-between;
   padding: 10px;
   border-radius: 5px;
