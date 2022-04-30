@@ -79,6 +79,12 @@
   border: 1px solid var(--border-basic-color);
 }
 
+.insert-money-input::-webkit-outer-spin-button,
+.insert-money-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .get-btn {
   border: 2px solid var(--border-basic-color);
   border-radius: 5px;
