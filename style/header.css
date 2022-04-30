@@ -6,6 +6,12 @@
   background-size: cover;
 }
 
+@media (max-width: 748px) {
+  .header {
+    width: 360px;
+  }
+}
+
 @media (max-width: 479px) {
   .header {
     margin: 0 auto 15px;
