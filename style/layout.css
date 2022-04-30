@@ -167,6 +167,16 @@ body {
   border-radius: 50px;
 }
 
+@media (max-width: 480px) {
+  body {
+    background-color: white;
+  }
+
+  .content {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 748px) {
   .content {
     display: block;
@@ -178,11 +188,24 @@ body {
     margin: 0 auto;
   }
 
-  .vending-machine {
-    margin-right: 0;
+  .content > .vending-machine {
+    padding-bottom: 20px;
   }
 
   .my-money-container {
     margin-bottom: 0;
+    padding: 0 27px;
+    border: 0;
+  }
+
+  .my-bag-container {
+    padding: 41px 27px 43px;
+    height: auto;
+  }
+}
+
+@media (max-width: 762px) {
+  .content > .vending-machine {
+    margin-right: auto;
   }
 }
