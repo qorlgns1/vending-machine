@@ -3,7 +3,6 @@ import { getColaName, getColaPrice, getColaCount } from "./checkCola.js";
 import { copyDisplayColaBtn } from "../component/colaButton.js";
 import { getMiniDisplay } from "../display/miniDisplay.js";
 import manageCola from "./manageCola.js";
-import { pseudoClassControll } from "../common/pseudoClassControll.js";
 import { getColaIndexNode } from "../common/extract.js";
 
 // export const subtractDeposit = () => {
@@ -35,10 +34,11 @@ export const insertCola = () => {
         if (manageColaCount === 0) {
           const index = getColaIndexNode(".menu-item", colaName);
 
-          pseudoClassControll(
-            `.list-menu > li:nth-of-type(${index + 1}) > button::before`,
-            "display: inline;"
+          const colaBtn = document.querySelector(
+            `.list-menu > li:nth-of-type(${index + 1}) > button`
           );
+
+          colaBtn.classList.add("sold-out");
         }
         // //콜라 상태 관리
 

@@ -3,7 +3,6 @@ import { getMiniDisplay } from "../display/miniDisplay.js";
 import { depositAdd } from "../money/depositMoney.js";
 import { getColaCount, getColaName, getColaPriceByName } from "./checkCola.js";
 import manageCola from "./manageCola.js";
-import { pseudoClassControll } from "../common/pseudoClassControll.js";
 import { getColaIndexNode } from "../common/extract.js";
 
 export const subtractColaCount = (colaBtn) => {
@@ -19,6 +18,7 @@ export const rollbackCola = () => {
       return false;
     }
 
+    // 미니디스플레이 콜라 버튼
     let colaBtn =
       e.target.tagName === "BUTTON" ? e.target : e.target.parentElement;
 
@@ -39,10 +39,13 @@ export const rollbackCola = () => {
     manageCola.add(colaName);
     const index = getColaIndexNode(".menu-item", colaName);
 
-    pseudoClassControll(
-      `.list-menu > li:nth-of-type(${index + 1}) > button::before`,
-      "display: none;"
+    // 콜라 자판기 버튼
+    const colaItemBtn = document.querySelector(
+      `.list-menu > li:nth-of-type(${index + 1}) > button`
     );
+
+    colaItemBtn.classList.remove("sold-out");
+
     // //콜라 상태 관리
   });
 };
