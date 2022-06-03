@@ -1,0 +1,41 @@
+{
+  "count": 6,
+  "result": [
+    {
+      "name": "Original_Cola",
+      "price": "1000",
+      "imageSrc": "./images/cola/original_cola.png",
+      "count": 3
+    },
+    {
+      "name": "Violet_Cola",
+      "price": "1000",
+      "imageSrc": "./images/cola/violet_cola.png",
+      "count": 3
+    },
+    {
+      "name": "Yellow_Cola",
+      "price": "1000",
+      "imageSrc": "./images/cola/yellow_cola.png",
+      "count": 3
+    },
+    {
+      "name": "Cool_Cola",
+      "price": "1000",
+      "imageSrc": "./images/cola/cool_cola.png",
+      "count": 3
+    },
+    {
+      "name": "Green_Cola",
+      "price": "1000",
+      "imageSrc": "./images/cola/green_cola.png",
+      "count": 3
+    },
+    {
+      "name": "Orange_Cola",
+      "price": "1000",
+      "imageSrc": "./images/cola/orange_cola.png",
+      "count": 3
+    }
+  ]
+}
